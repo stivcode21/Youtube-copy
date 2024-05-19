@@ -1,7 +1,7 @@
-### Website Youtube Responsive :fa-youtube-play:
+### Website Youtube Responsive 
 
 #### 
-simple design but with a little help we can make it as similar as :fa-briefcase: :fa-wrench:
+simple design but with a little help we can make it as similar as 
 
 - Responsive personal website HTML CSS Y JavaScript.
 - The main idea is to make the entire design part of its different sections a little interactive.
@@ -12,10 +12,10 @@ simple design but with a little help we can make it as similar as :fa-briefcase:
 - We will only work on part of the design, so let's expand our imagination.
 
 
-#### previos.  :fa-camera-retro:
+#### previos. 
 
-__desktop size :fa-desktop:__
+__desktop size__
 ![](https://i.ibb.co/M8XRhp1/website-youtube-jpg.png)
 
-__phone size :fa-tablet:___
+__phone size___
 ![](https://i.ibb.co/G7SqQ7K/website-responsive.png)
