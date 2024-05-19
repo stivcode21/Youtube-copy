@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: minmax(90px, 90px) auto;
+    grid-template-rows: 60px auto ;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: all .3s ease;
+}
+
+.contenedor.active {
+    grid-template-columns: minmax(260px, 18%) auto;
+}
+
+
+
+
+
+/*--- --- --- HEADER --- --- ---*/
+
+
+.header {
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+}
+
+/*...Contenedor logo...*/
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header .contenedor-logo .boton-menu:hover {
+    background-color: #e7e7e7;
+}
+
+.header .contenedor-logo .logo .fa-solid {
+    background-color: #ff0000;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 8px;
+    color: #fff;
+    position: relative;
+    top: -6px;
+    margin-right: 8px;
+}
+
+.header .contenedor-logo .logo{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 2px;
+}
+
+/*...Contenedor busquedad...*/
+.header .barra-busquedad {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busquedad input {
+    min-width: 50%;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 20px 0 0 20px;
+}
+
+.header .barra-busquedad button {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.header .barra-busquedad button:hover {
+    background-color: #f0f0f0;
+}
+
+
+/*...Contenedor botones...*/
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button {
+    background-color: #fff;
+    border: none; 
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 100px;
+    color: #828282;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header .botones-header button:hover{
+    background-color: #e7e7e7;
+}
+
+.header .botones-header .avatar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.header .botones-header .avatar img {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100px;
+}
+
+
+
+
+/*--- --- --- MENU LATERAL --- --- ---*/
+
+
+.menu-lateral {
+    background: #fff;
+    grid-area: menu;
+    overflow: hidden;       /*contenido sobrante cortara*/
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 15px 35px;
+    color: #000;
+    min-width: 800px;
+}
+
+.menu-lateral a:hover {
+    background-color: #e5e5e5;
+}
+
+.menu-lateral a.active{         /*a el enlace con la class active*/
+    background-color: #e5e5e5;
+    font-weight: bold; 
+}
+
+.menu-lateral .fa-solid {
+    color: #606060;
+    margin-right: 35px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral a.active .fa-solid {
+    color: #ff0000;
+}
+
+.menu-lateral hr {
+    margin: 20px 0;
+    border: 1px solid #dfdfdf;
+}
+
+
+
+
+/*--- --- --- CONTENIDO PRINCIPAL --- --- ---*/
+
+
+.main {
+    grid-area: contenido;
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.main .titulo {
+    margin-bottom: 20px;
+}
+
+.main .grid-videos {
+    display: grid;
+    grid-gap: 30px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main .grid-videos .video {
+    width: 100%;
+    display: block;
+}
+
+.main .grid-videos .video img {
+    width: 100%;
+}
+
+
+
+
+
+/*--- --- --- Mediaqueries --- --- ---*/
+
+
+@media screen and (max-width: 1200px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px 20px;
+    }
+
+    .header .contenedor-logo .logo span {
+        display: none;
+    }
+}
+
+
+/*---------------------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 20px;
+    }
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: auto;
+    }
+
+    .header {
+        padding: 20px;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-template-areas: "logo iconos"
+                             "busqueda busqueda";
+    }
+
+    .header .contenedor-logo .logo span {
+        display: inline;
+    }
+
+    .header .barra-busquedad input {
+        min-width: auto;
+        width: 70%;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+
+/*---------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 600px) {
+    .contenedor.active {
+        grid-template-columns: minmax(90px,90px);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main .grid-videos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px 5px;
+    }
+
+    .header .contenedor-logo .logo span {
+        display: none;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
