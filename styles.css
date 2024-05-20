@@ -246,19 +246,8 @@ a {
   margin-right: 10px;
 }
 
-/*--- --- --- Mediaqueries --- --- ---*/
 
-@media screen and (max-width: 1200px) {
-  .main .grid-videos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px 20px;
-  }
-
-  .header .contenedor-logo .logo span {
-    display: none;
-  }
-}
-
+/*--seccion de videos--*/
 .all-videos {
   margin-top: 20px;
   display: flex;
@@ -316,6 +305,19 @@ a {
   color: #545454;
   font-size: 0.8em;
   font-weight: 500;
+}
+
+/*--- --- --- Mediaqueries --- --- ---*/
+
+@media screen and (max-width: 1200px) {
+  .main .grid-videos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+  }
+
+  .header .contenedor-logo .logo span {
+    display: none;
+  }
 }
 
 /*---------------------------------------------------------------------*/
