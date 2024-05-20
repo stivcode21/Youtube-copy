@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REPLICA YOUTUBE</title>
 
     <!--- Fonts --->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <div class="contenedor active" id="contenedor">
         <header class="header">
@@ -37,7 +41,7 @@
             <a href="#"><i class="fa-solid fa-panorama"></i>Suscripciones</a>
 
             <hr>
-        
+
             <a href="#"><i class="fa-solid fa-user-gear"></i>Tu canal</a>
             <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Historial</a>
             <a href="#"><i class="fa-solid fa-list"></i>Lista de reproduccion</a>
@@ -50,21 +54,204 @@
         </nav>
 
         <main class="main">
-            <h3 class="titulo">Videos recomendados</h3>
-            <div  class="grid-videos">
-                <a href="#" class="video"><img src="https://frikiverseros.com.ar/wp-content/uploads/2022/08/Dragon-Ball-Super-Super-Hero-4-500x280.jpg" alt=""></a>
-                <a href="#" class="video"><img src="https://www.parainmigrantes.info/wp-content/uploads/2023/09/miniatura-taller-moneytrans-1-500x280.png" alt=""></a>
-                <a href="#" class="video"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Beyonce_Birminhan2.jpg" alt=""></a>
-                <a href="#" class="video"><img src="https://as1.ftcdn.net/v2/jpg/06/36/16/94/500_F_636169496_P0NQ8s18Hgfu4JNg7Rk6bKTTdtbkBCnv.jpg" alt=""></a>
-                <a href="#" class="video"><img src="https://pistav8espymas.files.wordpress.com/2019/05/0008502028.jpg?w=500&h=281" alt=""></a>
-                <a href="#" class="video"><img src="https://www.parainmigrantes.info/wp-content/uploads/2023/03/como-enviar-dinero-con-sendity-web-500x280.jpeg" alt=""></a>
-                <a href="#" class="video"><img src="https://www.spherasports.com/wp-content/uploads/2016/08/resized_a3d7c-8bd8eb612.jpg" alt=""></a>
-                <a href="#" class="video"><img src="https://media.tenor.com/M7fQuLd80VgAAAAe/slugterra-hi.png" alt=""></a>
-                <a href="#" class="video"><img src="https://i.pinimg.com/564x/d8/fa/63/d8fa631444ead2d5cac1b13ccf8353be.jpg" alt=""></a>
-                <a href="#" class="video"><img src="https://i.pinimg.com/originals/3e/a8/b7/3ea8b7f1458e03164f30924322faf2f9.gif" alt=""></a>
-                <a href="#" class="video"><img src="https://romanticastereo.com/wp-content/uploads/2017/08/goku.gif" alt=""></a>
-                <a href="#" class="video"><img src="https://i.pinimg.com/originals/22/02/4f/22024f9aec7a4490814d5df3f99c43ed.gif" alt=""></a>
-            </div>
+            <section class="container-label">
+                <span class="label-container">Todo</span>
+                <span class="label-container">Musica</span>
+                <span class="label-container">Deporte</span>
+                <span class="label-container">Desarrollo Web</span>
+                <span class="label-container">Tecnología</span>
+                <span class="label-container">Microsoft</span>
+                <span class="label-container">Diseño de interfaces</span>
+                <span class="label-container">Programación</span>
+                <span class="label-container">Arte</span>
+                <span class="label-container">Entretenimiento</span>
+                <span class="label-container">Juegos</span>
+                <span class="label-container">Moda</span>
+            </section>
+            <section class="all-videos">
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/fazt-dibujando-node.webp" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/fazt.jpg" alt="user-fazt">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Dibujando en tiempo real con Node.js</h2>
+                            <span class="description-video">Fazt</span>
+                            <span class="description-video">2.3K visualizaciones - hace 4 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/fazt-tecnologias.webp" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/fazt.jpg" alt="user-fazt">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">TOP 5 tecnologías moviles multiplataformas</h2>
+                            <span class="description-video">Fazt</span>
+                            <span class="description-video">8.9K visualizaciones - hace 16 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/midudev-aprende-programación.jpg"
+                            alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/midudev.jpg" alt="user-fazt">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Aprende programacion mas rapido de lo que crees</h2>
+                            <span class="description-video">midudev</span>
+                            <span class="description-video">13.2K visualizaciones - hace 2 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/holamundo-css.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/holamundo.jpg" alt="user-fazt">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Aprende CSS desde cero en 2 HORAS!</h2>
+                            <span class="description-video">Holamundo</span>
+                            <span class="description-video">23.1K visualizaciones - hace 4 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/holamundo-dinero.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/holamundo.jpg" alt="user-holamundo">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Dejemos de satanizar el dinero!- aprende a cobrar</h2>
+                            <span class="description-video">Holamundo</span>
+                            <span class="description-video">4.6K visualizaciones - hace 1 dia</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/midudev-desarrollo-web.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/midudev.jpg" alt="user-midudev">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Aprende todo lo que significa el desarrollo web</h2>
+                            <span class="description-video">midudev</span>
+                            <span class="description-video">3.6K visualizaciones - hace 12 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/holamundo-javascript.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/holamundo.jpg" alt="user-holamundo">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">TOP 7 RAZONES para aprender JavaScript</h2>
+                            <span class="description-video">holamundo</span>
+                            <span class="description-video">4.1K visualizaciones - hace 6 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/holamundo-react.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/holamundo.jpg" alt="user-holamundo">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Aprende React desde cero en solo 2 HORAS</h2>
+                            <span class="description-video">holamundo</span>
+                            <span class="description-video">7.6K visualizaciones - hace 21 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/midudev-trucos-javascript.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/midudev.jpg" alt="user-midudev">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">Trucos de JavaScript que te ahorrarán tiempo</h2>
+                            <span class="description-video">midudev</span>
+                            <span class="description-video">11.2K visualizaciones - hace 3 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/midudev-vscode.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/midudev.jpg" alt="user-midudev">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">TOP 7 CONFIGURACIONES que debes tener en tu VSCode</h2>
+                            <span class="description-video">midudev</span>
+                            <span class="description-video">1.6K visualizaciones - hace 1 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/tomex-minipc.jpg" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/tomex.jpg" alt="user-tomex">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">compré la PC GAMER mas pequeña DEL MUNDO!</h2>
+                            <span class="description-video">Tomex</span>
+                            <span class="description-video">11.3K visualizaciones - hace 13 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure class="figure-video">
+                        <img class="miniatura-video" src="./img/videos/html-frontend.webp" alt="fazt-node">
+                    </figure>
+                    <div class="container-videos">
+                        <figure class="figure-icon">
+                            <img class="img-icon" src="./img/logos/holamundo.jpg" alt="user-holamundo">
+                        </figure>
+                        <div>
+                            <h2 class="title-videos">TIPS indispensables para practicar FRONTEND</h2>
+                            <span class="description-video">holamundo</span>
+                            <span class="description-video">1.8K visualizaciones - hace 5 horas</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </section>
         </main>
     </div>
 
@@ -73,4 +260,5 @@
     <script src="https://kit.fontawesome.com/d3f589e164.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
